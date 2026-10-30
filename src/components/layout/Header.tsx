@@ -94,7 +94,7 @@ const NAV_LEFT: NavSection[] = [
 
 const NAV_RIGHT: NavSection[] = [
   {
-    title: "Our Story",
+    title: "Story",
     href: "/about",
     columns: [
       {
@@ -305,13 +305,10 @@ export default function Header() {
 
             <button
               onClick={openCart}
-              className="flex items-center gap-2 text-velune-charcoal hover:opacity-60 transition-opacity p-1.5"
+              className="flex items-center text-velune-charcoal hover:opacity-60 transition-opacity p-1.5"
               aria-label={`Shopping bag with ${itemCount} items`}
             >
               <ShoppingBag className="w-4 h-4 stroke-[1.5]" />
-              <span className="text-[11px] uppercase tracking-[0.14em] font-medium">
-                Bag ({itemCount})
-              </span>
             </button>
           </div>
         </div>
